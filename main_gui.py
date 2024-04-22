@@ -48,7 +48,7 @@ class MainApp(QtWidgets.QWidget, Ui_Form):
         f = lambdify(x, f_expr, 'numpy')
 
         result, message = self.false_position(f, a, b, tolerance)
-
+#-------------------------------------------------------------------------------------------------------------------------------------
         if result:
             self.TableWidget.setRowCount(len(result))
             for row, (a, b, X, fx, error) in enumerate(result):
